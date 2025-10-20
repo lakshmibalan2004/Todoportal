@@ -3,7 +3,7 @@ from flask_cors import CORS
 from database import get_db_connection, create_table
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS
+CORS(app,origins="https://todoportal.netlify.app")  # Enable CORS
 
 # Create table if not exists
 create_table()

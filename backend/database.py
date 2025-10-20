@@ -1,7 +1,11 @@
 import sqlite3
+import os
+
+# Ensure the database file is in the same folder as this script
+DB_PATH = os.path.join(os.path.dirname(__file__), 'todo.db')
 
 def get_db_connection():
-    conn = sqlite3.connect('todo.db')
+    conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
 

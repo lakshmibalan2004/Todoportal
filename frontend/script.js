@@ -1,4 +1,4 @@
-const apiUrl = "http://127.0.0.1:5000/tasks"; // Change later after deploying
+const apiUrl = "https://todolist-1ppa.onrender.com"; // Change later after deploying
 
 // Fetch and display tasks on page load
 window.onload = loadTasks;
